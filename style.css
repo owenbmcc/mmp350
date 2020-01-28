@@ -1,0 +1,24 @@
+body {
+	background-color: #93E3CC;
+	font-family: Helvetica;
+	font-size: 20px;
+	color: #6819A1;
+}
+
+a {
+	color: #6819A1;
+	padding: 0.25em;
+	transition: background-color 300ms;
+}
+
+a:hover {
+	background-color: #A6BBDC;
+}
+
+ul {
+	padding: 0;
+}
+
+li { 
+	list-style: none;
+}
