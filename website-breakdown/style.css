@@ -1,0 +1,23 @@
+body {
+	background: #D6EAF8;
+	color: #154360;
+	font-family: Geneva;
+}
+
+p { 
+	font-size: 1.5m; 
+}
+
+img {
+	max-width: 100%;
+}
+
+hr {
+	border: none;
+	border-top: 1px solid #154360;
+}
+
+#container {
+	max-width: 600px;
+	margin: 0 auto;
+}
