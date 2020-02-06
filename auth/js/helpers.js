@@ -26,7 +26,7 @@ fb.logout = function() {
 };
 
 fb.onError = function(message) {
-	if (typeof onError === 'function') onError(error.message);
+	if (typeof onError === 'function') onError(message);
 };
 
 fb.getUsers = function(userCallback, callback) {
