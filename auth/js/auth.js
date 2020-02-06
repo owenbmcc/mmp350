@@ -4,9 +4,9 @@
 */
 
 const loginEmail = document.getElementById("login-email");
-const loginPassword = document.getElementById("login-password");
-const loginButton = document.getElementById("login-button");
-const loginMessage = document.getElementById("login-message");
+const loginPassword = js.getEl("login-password");
+const loginButton = js.getEl("login-button");
+const loginMessage = js.getEl("login-message");
 
 /*
 	event listener 
@@ -16,9 +16,10 @@ const loginMessage = document.getElementById("login-message");
 */
 
 loginButton.onclick = function() {
-	console.log(loginEmail.value, loginPassword.value);
-
-	loginMessage.textContent = "You logged in.";
+	fb.login(loginEmail.value, loginPassword.value);
 };
 
+function onError(errorMessage) {
+	loginMessage.textContent = errorMessage;
+}
 
