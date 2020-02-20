@@ -1,3 +1,30 @@
+/*
+	font pairing 1
+	font-family: 'Odibee Sans', cursive;
+	font-family: 'Lacquer', sans-serif;
+*/
+
+.post,
+input {
+	font-family: 'Odibee Sans', cursive;
+}
+
+h1,
+button,
+a,
+.post-date {
+	font-family: 'Lacquer', sans-serif;
+}
+
+button {
+	font-size: 1.125em;
+}
+
+
+.post {
+	line-height: 1.2;
+}
+
 .post-text {
 	font-size: 1.25em;
 }
@@ -7,5 +34,13 @@
 }
 
 .post-author {
+	/*color: darkblue;*/
+}
+
+.post-author strong {
 	color: darkblue;
+}
+
+.post-date {
+	font-size: 0.5em;
 }

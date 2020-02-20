@@ -1,2 +1,8 @@
+/* typographic pairing 1 */
+@import url('https://fonts.googleapis.com/css?family=Lacquer|Odibee+Sans&display=swap');
+
+/* typographic pairing 2 */
+@import url('https://fonts.googleapis.com/css?family=Kalam:400,700|Tomorrow:400,700&display=swap');
+
 @import "css/main.css";
-@import "css/typography-1.css";
+@import "css/typography-2.css";
