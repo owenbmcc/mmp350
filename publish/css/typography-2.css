@@ -6,7 +6,8 @@
 
 h1,
 input,
-button {
+button,
+textarea {
 	font-family: 'Kalam', cursive;
 }
 

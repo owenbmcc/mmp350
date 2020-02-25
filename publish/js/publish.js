@@ -12,5 +12,5 @@ publishButton.addEventListener('click', publishPost);
 function publishPost() {
 	const uid = fb.getUID();
 	fb.publishPost(uid, publishText.value);
-	publishText.value = "";
+	publishText.value = ""; // reset textarea
 }
