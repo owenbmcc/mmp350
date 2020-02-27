@@ -50,29 +50,17 @@
 			<button id="publish-button">Publish</button>
 		</div>
 
-		<div id="posts">
-			<div class="post">
-				<div class="post-text">I skate where the puck is going to be, not to where it has been.</div>
-				<div class="post-info">
-					<div class="post-author">by <strong>Wayne Gretzky</strong></div>
-					<div class="post-date">on Monday, January 1, 1999</div>
-				</div>
-			</div>
-			
-			<div class="post">
-				<div class="post-text">I skate where the puck is going to be, not to where it has been.</div>
-				<div class="post-info">
-					<div class="post-author">by <strong>Wayne Gretzky</strong></div>
-					<div class="post-date">on Monday, January 1, 1999</div>
-				</div>
-			</div>
-		</div>
+		<div id="posts"></div>
 		
 	</div>
 
 	<script src="js/helpers.js"></script>
 	<script src="js/auth.js"></script>
 	<script src="js/publish.js"></script>
+	<script src="js/displayPosts.js"></script>
+	<script>
+		fb.loadPosts();
+	</script>
 </body>
 </html>
 
