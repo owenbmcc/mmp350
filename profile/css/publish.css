@@ -1,0 +1,11 @@
+textarea {
+	font-size: inherit;
+	width: 100%;
+	resize: none;
+	border-radius: 0.25em;
+	padding: 0.25em;
+}
+
+#publish-post  {
+	text-align: right;
+}

@@ -1,0 +1,8 @@
+#display-name {
+	background-color: transparent;
+	border: none;
+	border-radius: 0;
+	border-bottom: 2px solid var(--main-color);
+	margin-bottom: 1em;
+	font-size: 1.5em;
+}
