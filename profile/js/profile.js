@@ -16,6 +16,7 @@ function displayProfile(userName, userInfo) {
 	if (userInfo.bio) {
 		profileBio.value = userInfo.bio;
 	}
+
 }
 
 profileButton.onclick = function() {
