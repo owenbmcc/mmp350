@@ -23,17 +23,16 @@ button, input {
 	margin-bottom: 1em;
 }
 
-/* user is authenticated */
-.auth #login {
+/* authenticated */
+body.auth #login {
 	display: none;
 }
 
-.auth #user-info {
+body.auth #user-info {
 	display: block;
 }
 
-/* user is not authenticated */
-#user-info {
+/* not authenticated */
+body #user-info {
 	display: none;
 }
-

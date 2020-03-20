@@ -26,7 +26,7 @@ fb.logout = function() {
 };
 
 fb.onError = function(message) {
-	if (typeof onError === 'function') onError(error.message);
+	if (typeof onError === 'function') onError(message);
 };
 
 fb.getUsers = function(userCallback, callback) {
@@ -69,10 +69,10 @@ fb.getUserProfile = function(uid) {
 	});
 };
 
-fb.updateProfile = function(id, key, value) {
+fb.updateProfile = function(uid, key, value) {
 	const info = {};
 	info[key] = value;
-	firebase.database().ref('users').child(id).update(info);
+	firebase.database().ref('users').child(uid).update(info);
 };
 
 fb.uploadImage = function(file, uid) {
@@ -92,9 +92,9 @@ fb.publishPost = function(uid, text) {
 		uid: uid,
 		date: Date.now(),
 		text: text
-	};
+	}
 
-	const tags = postText.value.match(/#[a-z0-9]+/gi);
+	const tags = text.match(/#[a-z0-9]+/gi);
 	if (tags) {
 		post.tags = {};
 		for (let i = 0; i < tags.length; i++) {
@@ -103,7 +103,8 @@ fb.publishPost = function(uid, text) {
 		}
 	}
 
-	firebase.database().ref('posts').push(post);
+	firebase.database().ref('posts')
+		.push(post);
 };
 
 fb.getUID = function() {
@@ -140,6 +141,8 @@ firebase.auth().onAuthStateChanged(user => {
 			const userInfo = snapshot.val();
 			if (typeof userLoggedIn === 'function') 
 				userLoggedIn(user.uid, userInfo.displayName, userInfo.imageURL);
+			if (typeof profileLoggedIn === 'function') 
+				profileLoggedIn(user.uid);
 		});	
 	} else {
 		if (typeof noUser === 'function') noUser();

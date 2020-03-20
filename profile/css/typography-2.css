@@ -11,7 +11,8 @@
 h1,
 input,
 button,
-textarea {
+textarea,
+p {
 	font-family: 'Kalam', cursive;
 }
 

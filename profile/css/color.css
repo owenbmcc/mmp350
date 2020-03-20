@@ -82,7 +82,7 @@ a:hover {
 	border-color: var(--accent-color);
 }
 
-#title {
+#title, p {
 	color: var(--accent-color);
 }
 
