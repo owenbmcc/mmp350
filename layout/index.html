@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+	<title>MMP 350</title>
+	<meta charset="utf-8">
+	<link href="style.css" rel="stylesheet" type="text/css">
+
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-database.js"></script>
+
+	<script>
+		// Your web app's Firebase configuration
+		var firebaseConfig = {
+			apiKey: "AIzaSyD7biJDPGVAZIjs26hetYh0NKwwGmUrbWs",
+			authDomain: "mmp350-s20.firebaseapp.com",
+			databaseURL: "https://mmp350-s20.firebaseio.com",
+			projectId: "mmp350-s20",
+			storageBucket: "mmp350-s20.appspot.com",
+			messagingSenderId: "598284319367",
+			appId: "1:598284319367:web:8667f598c0ff5e83fd9622",
+			measurementId: "G-4S9W1F1KDL"
+		};
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+	</script>
+
+</head>
+<body>
+	<div id="container">
+		<div id="title">
+			<h1>MMP 350 Site</h1>
+		</div>
+
+		<div id="user-info">
+			<p id="user-name"></p>
+			<a id="edit-profile-link">Edit Profile</a>
+			<button id="logout-button">Logout</button>
+		</div>
+
+		<div id="login">
+			<input id="login-email" type="text" placeholder="Email">
+			<input id="login-password" type="password" placeholder="Password">
+			<button id="login-button">Login</button>
+			<p id="login-message"></p>
+			<p><a href="create.html">Create a new account</a></p>
+		</div>
+
+		<div id="publish-post">
+			<textarea id="publish-text" placeholder="Compose your post..."></textarea>
+			<button id="publish-button">Publish</button>
+		</div>
+
+		<div id="posts"></div>
+		
+	</div>
+
+	<script src="js/helpers.js"></script>
+	<script src="js/auth.js"></script>
+	<script src="js/publish.js"></script>
+	<script src="js/displayPosts.js"></script>
+	<script>
+		fb.loadPosts();
+	</script>
+</body>
+</html>
+

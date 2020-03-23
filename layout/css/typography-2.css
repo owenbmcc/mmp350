@@ -1,0 +1,27 @@
+/*
+	type pairing 2
+	font-family: 'Tomorrow', sans-serif;
+	font-family: 'Kalam', cursive;
+*/
+
+:root {
+	--text-size: 20px;
+}
+
+h1,
+input,
+button,
+textarea,
+p {
+	font-family: 'Kalam', cursive;
+}
+
+.post,
+a {
+	font-family: 'Tomorrow', sans-serif;
+	font-size: var(--text-size);
+}
+
+.post-date {
+	color: gray;
+}
