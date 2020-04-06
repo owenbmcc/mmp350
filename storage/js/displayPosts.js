@@ -24,6 +24,13 @@ function createPost(postData, userInfo, postId) {
 	}
 	post.appendChild(userImage);
 
+	// add post image
+	if (postData.imageURL) {
+		const postImage = js.createEl('img', 'post-image');
+		postImage.src = postData.imageURL;
+		post.appendChild(postImage);
+	}
+
 
 
 	// post info 
