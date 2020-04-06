@@ -1,0 +1,32 @@
+.post {
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 0.25em;
+	padding: 1em;
+	margin-top: 1em;
+
+	position: relative;
+	min-height: 120px;
+}
+
+.post-text {
+}
+
+.post-author {
+
+}
+
+.post-date {
+	
+}
+
+.post-profile-image {
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	border-radius: 100px;
+
+	position: absolute;
+	right: 5px;
+	top: 5px;
+}

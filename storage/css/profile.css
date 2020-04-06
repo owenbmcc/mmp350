@@ -1,0 +1,12 @@
+#profile-display-name {
+	background-color: inherit;
+	border: inherit;
+	border-radius: inherit;
+	border-bottom: 1px solid var(--main-color);
+	margin-bottom: 1em;
+	font-size: 1.75em;
+}
+
+#update-profile {
+	display: none;
+}
