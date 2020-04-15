@@ -1,0 +1,39 @@
+#container {
+
+	min-width: 640px;
+	max-width: 960px;
+	margin: 0 auto;
+
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-gap: 1em;
+
+	grid-template-areas:
+		"menu menu"
+		"main title"
+		"main publish"
+		"main nothing"
+	;
+}
+
+#title {
+	grid-area: title;
+}
+
+#user-info {
+	grid-area: menu;
+}
+
+#login {
+	grid-area: menu;
+}
+
+#publish-post {
+	grid-area: publish;
+}
+
+#sign-up,
+#profile,
+#posts {
+	grid-area: main;
+}

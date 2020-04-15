@@ -1,0 +1,45 @@
+* {
+	box-sizing: border-box;
+}
+
+/* reset UI styles */
+button, input {
+	font: inherit;
+	background: none;
+	border: none;
+	border: 1px solid black;
+	border-radius: 3px;
+	padding: 3px 6px;
+	line-height: 1;
+	vertical-align: middle;
+}
+
+img {
+	width: 100%;
+}
+
+h1 {
+	margin: 0;
+}
+
+/* authenticated */
+body.auth #login {
+	display: none;
+}
+
+body.auth #profile-image-input,
+body.auth #update-profile-image {
+	display: block;
+}
+
+body.auth #user-info {
+	display: flex;
+}
+
+/* not authenticated */
+#profile-image-input,
+#update-profile-image,
+body #user-info {
+	display: none;
+}
+

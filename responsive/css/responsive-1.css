@@ -1,0 +1,29 @@
+/* mobile */
+
+@media (max-device-width: 414px) {
+	#container {
+		min-width: inherit;
+		max-width: 100%;
+
+		grid-template-columns: 100%;
+	}
+
+	#title {
+		grid-column-start: 1;
+		grid-column-end: 2;
+	}
+
+	#user-info,
+	#login {
+		grid-column: 1 / 2;
+	}
+
+	#publish-post {
+		grid-column: 1 / span 1;
+	}
+
+	#posts,
+	#profile {
+		grid-row: 4;
+	}
+}
