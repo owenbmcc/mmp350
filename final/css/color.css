@@ -1,0 +1,88 @@
+/* custom properties */
+
+/* root is the top most element of the html page */
+:root {
+	/* monochomatic green color scheme 
+	--main-color: #4DFFE1;
+	--accent-color: #00CCAA;
+	--placeholder-color: #268071;
+	*/
+}
+
+:root {
+	/* orange analagous color scheme 
+	--main-color: #FFD908;
+	--accent-color: #E8AF05;
+	--placeholder-color: var(--accent-color);
+	*/
+}
+
+:root {
+	/* triadic color scheme */
+	--main-hue: 90;
+	--accent-one: calc(var(--main-hue) + 120);
+	--accent-two: calc(var(--main-hue) - 120);
+
+	--main-color: hsl(var(--main-hue), 50%, 70%);
+	--accent-color: hsl(var(--accent-one), 50%, 40%);
+	--placeholder-color: hsl(var(--accent-two), 20%, 50%);
+}
+
+:root {
+	/* analagous color scheme */
+	--main-hue: 135;
+	--offset: 45;
+	--accent-one: calc(var(--main-hue) + var(--offset));
+	--accent-two: calc(var(--main-hue) - var(--offset));
+
+	--main-color: hsl(var(--main-hue), 50%, 70%);
+	--accent-color: hsl(var(--accent-one), 50%, 50%);
+	--placeholder-color: hsl(var(--accent-two), 50%, 40%);
+}
+
+:root {
+	/* complementary */
+	--main-hue: 240;
+	--accent-one: calc(var(--main-hue) + 180);
+
+	--main-color: hsl(var(--main-hue), 50%, 70%);
+	--accent-color: hsl(var(--accent-one), 40%, 60%);
+	--placeholder-color: hsl(var(--accent-one), 60%, 40%);
+}
+
+:root {
+	/* monochromatic */
+	--main-hue: 240;
+
+	--main-color: hsl(var(--main-hue), 50%, 70%);
+	--accent-color: hsl(var(--main-hue), 60%, 40%);
+	--placeholder-color: hsl(var(--main-hue), 40%, 60%);
+}
+
+
+button, input, textarea {
+	background-color: var(--main-color);
+	border-color: var(--accent-color);
+	color: var(--accent-color);
+}
+
+button::placeholder, input::placeholder, textarea::placeholder {
+	color: var(--placeholder-color);
+}
+
+a {
+	color: var(--accent-color);
+}
+
+a:hover {
+	color: var(--main-color);
+}
+
+.post, .user {
+	border-color: var(--accent-color);
+}
+
+#title, p {
+	color: var(--accent-color);
+}
+

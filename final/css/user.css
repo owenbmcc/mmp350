@@ -1,0 +1,23 @@
+.user {
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 0.25em;
+	
+	margin-bottom: 1em;
+
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	padding: 1em;
+}
+
+.user-bio {
+	flex-basis: 100%;
+	padding: 1em 0;
+}
+
+.user-image {
+	cursor: pointer;
+	border-radius: 0.5em;
+}

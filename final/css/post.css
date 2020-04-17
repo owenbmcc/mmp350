@@ -1,0 +1,40 @@
+.post {
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 0.25em;
+	
+	margin-bottom: 1em;
+
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.post-text {
+	padding: 1em;
+	padding-bottom: 0;
+	flex: 1;
+}
+
+.post-author {
+	margin-right: 1em;
+}
+
+.post-date {
+	
+}
+
+.post-profile-image {
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	border-radius: 100px;
+
+	cursor: pointer;
+}
+
+.post-info {
+	flex-basis: 100%;
+	padding: 1em;
+	padding-top: 0;
+}

@@ -1,0 +1,46 @@
+#user-info,
+#login {
+	display: flex;
+	justify-content: flex-start;
+	align-items: stretch;
+	flex-wrap: wrap;
+}
+
+#user-info p,
+#login p {
+	margin: 0;
+}
+
+#user-name {
+	font-size: 1.5em;
+}
+
+#login-message {
+	flex-basis: 100%;
+	text-align: right;
+}
+
+#logout-button,
+#login-email {
+	margin-left: auto;
+}
+
+#login-email,
+#login-password {
+	margin-right: 0.5em;
+}
+
+
+#create-link {
+	align-self: center;
+}
+
+#create-link a {
+	font-size: 1em;
+}
+
+#edit-profile-link {
+	align-self: center;
+	margin-left: 1em;
+	font-size: 1em;
+}
